@@ -304,15 +304,17 @@ p {
 
 .site-img{
   width: 100%;
-  height: 220px; /* 固定 */
+  height: 220px;
   overflow: hidden;
-  border-radius: 10px;
 }
 
-.site-img img {
+.site-img img{
+  width: 100%;      /* ←これ追加 */
   height: 100%;
   object-fit: cover;
+  display: block;
 }
+
 
 .site-exp{
     position: absolute;
@@ -477,30 +479,23 @@ h4{
   margin: 80px 0;
 }
 
-.mail-title {
+.mail p{
   font-size: 18px;
   font-weight: bold;
 }
 
-.mail-link {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.mail img {
+.mail img{
   width: 100px;
   height: auto;
   margin: 30px 0 10px 0;
-  transition: 0.3s;
 }
 
-.mail .address {
+.mail .address{
   font-size: 0.9rem;
 }
 
-.mail-link:hover {
-  opacity: 0.6;
+.mail a:hover{
+  opacity: 0.5;
 }
 
 /* =========================
@@ -742,10 +737,41 @@ small {
   overflow: hidden; 
 }
 
-.slide-container > h3{
+.slide-container > h1{
 text-align: center;
 font-size: 1.5rem;
 margin-top: 10vh;
+}
+
+.site > h2{
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.more-site{
+    margin-top: 50px; 
+    
+}
+
+.more-site ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.more-site ul li{
+  height: 340px; /* ←固定が一番安定 */
+  border-radius: 15px;
+  position: relative;
+  padding: 10px;
+}
+
+/* 画像アニメーション */
+.more-site ul li img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  opacity: 0.5;
 }
 
 .slide-container p{
@@ -847,6 +873,7 @@ margin-top: 10vh;
   opacity:1;
   transform:translateY(0);
 }
+
 
 
 /* =========================
