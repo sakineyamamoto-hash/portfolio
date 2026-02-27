@@ -477,7 +477,7 @@ h4{
 /* mail */
 .mail {
   text-align: center;
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 .mail p{
@@ -568,12 +568,13 @@ small {
 
 .button a{
     display: inline-block;
-    padding: 10px 25px;
+    padding: 15px 15px;
     border: 1px solid #615b5e;
     background-color: #615b5e;
     border-radius: 100px;
     font-weight: bold;
     color: #fff;
+    font-size: 14px;
 }
 
 .button a:hover{
